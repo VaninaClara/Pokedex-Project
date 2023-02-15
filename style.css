@@ -177,6 +177,22 @@ body {
   color: black;
 }
 
+.button-search {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3959a7;
+  color: white;
+}
+
+.button-search:hover {
+  background-color: #adff2f;
+  color: black;
+}
+
 #input_tipo {
   height: auto;
   font-size: 25px;
@@ -187,6 +203,13 @@ body {
 }
 #input_debilidad {
   height: auto;
+  font-size: 25px;
+}
+
+#input_search {
+  padding: 15px 10px;
+  outline: none;
+  width: 400px;
   font-size: 25px;
 }
 
