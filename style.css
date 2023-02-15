@@ -1,0 +1,215 @@
+* {
+  margin: 0;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.container_logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  height: 40vh;
+}
+#logo {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/*main {
+  margin: 50px;
+  padding: 50px;
+}*/
+
+.container {
+  margin: 60px;
+  padding: 60px;
+  background-image: url(img/fondo-pokedex.png);
+  background-attachment: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: auto;
+}
+
+.card {
+  list-style: none;
+  padding: 40px;
+  background-color: #adff2f;
+  color: #000000;
+  opacity: 0.9;
+  text-align: center;
+  border-radius: 25% 10%;
+}
+.card-title {
+  text-transform: uppercase;
+  font-size: 32px;
+  font-weight: normal;
+  margin-bottom: 0;
+}
+.card-subtitle {
+  font-weight: lighter;
+  color: #3959a7;
+  margin-top: 5px;
+}
+.card-height {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+.card-weight {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 600;
+}
+
+.card-image {
+  height: 180px;
+}
+
+#pokedex {
+  padding-inline-start: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  grid-gap: 20px;
+}
+
+.card:hover {
+  animation: tada 0.5s linear;
+}
+
+@keyframes tada {
+  from {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    -webkit-transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(0.9, 0.9, 0.9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  to {
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  }
+}
+.animate__tada {
+  -webkit-animation-name: tada;
+  animation-name: tada;
+}
+/* originally authored by Nick Pettit - https://github.com/nickpettit/glide */
+
+.container_button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width:auto;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.button_tipo {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3959a7;
+  color: white;
+}
+
+.button_tipo:hover {
+  background-color: #adff2f;
+  color: black;
+}
+
+.button_habilidad {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3959a7;
+  color: white;
+}
+
+.button_habilidad:hover {
+  background-color: #adff2f;
+  color: black;
+}
+
+.button_debilidad {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 25px;
+  font-weight: 300;
+  margin: 10px;
+  cursor: pointer;
+  background-color: #3959a7;
+  color: white;
+}
+
+.button_debilidad:hover {
+  background-color: #adff2f;
+  color: black;
+}
+
+#input_tipo {
+  height: auto;
+  font-size: 25px;
+}
+#input_habilidad {
+  height: auto;
+  font-size: 25px;
+}
+#input_debilidad {
+  height: auto;
+  font-size: 25px;
+}
+
+@media (max-width: 800px) {
+  .container {
+    background-image: none;
+  }
+  body {
+    background-color: white;
+  }
+ .container_button {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+ }
+}
+
+@media (max-width: 600px) {
+  .card {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+
+
